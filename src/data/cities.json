@@ -1,0 +1,112 @@
+{
+  "cities": [
+    {
+      "cityName": "Mino",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "Tue Jun 27 2023",
+      "notes": "",
+      "position": {
+        "lat": 43.39706523932025,
+        "lng": -8.204269307271453
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Skeiða- og Gnupverjahreppur",
+      "country": "Iceland",
+      "emoji": "IS",
+      "date": "Tue Jun 27 2023",
+      "notes": "",
+      "position": {
+        "lat": 64.73664139557685,
+        "lng": -18.44257560658917
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Sermersooq",
+      "country": "Greenland",
+      "emoji": "GL",
+      "date": "Tue Jun 27 2023",
+      "notes": "",
+      "position": {
+        "lat": 63.89873081524394,
+        "lng": -51.47574318164616
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Saint-Cyr-en-Val",
+      "country": "France",
+      "emoji": "FR",
+      "date": "Tue Jun 27 2023",
+      "notes": "",
+      "position": {
+        "lat": 47.85740289465826,
+        "lng": 1.9308562174206583
+      },
+      "id": 98443204
+    },
+    {
+      "cityName": "Caceres",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "Wed Apr 05 2023",
+      "notes": "",
+      "position": {
+        "lat": 39.39375459224348,
+        "lng": -6.314041652080822
+      },
+      "id": 98443205
+    },
+    {
+      "cityName": "La Pedraja de Portillo",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "Wed May 03 2023",
+      "notes": "",
+      "position": {
+        "lat": 41.52502957323801,
+        "lng": -4.710581836060532
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Reykjavik",
+      "country": "Iceland",
+      "emoji": "IS",
+      "date": "Thu Jul 06 2023",
+      "notes": "Wow!",
+      "position": {
+        "lat": 64.12498955307804,
+        "lng": -21.9145716898997
+      },
+      "id": 98443207
+    },
+    {
+      "cityName": "Bologna",
+      "country": "Italy",
+      "emoji": "IT",
+      "date": "Thu Jul 06 2023",
+      "notes": "",
+      "position": {
+        "lat": 44.470051236358984,
+        "lng": 11.37042013567404
+      },
+      "id": 98443208
+    },
+    {
+      "cityName": "Saint-Denis-des-Puits",
+      "country": "France",
+      "emoji": "FR",
+      "date": "Mon Apr 24 2023",
+      "notes": "Amazing town!",
+      "position": {
+        "lat": 48.378145469762444,
+        "lng": 1.1887484222684688
+      },
+      "id": 98443209
+    }
+  ]
+}
