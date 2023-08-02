@@ -28,7 +28,10 @@ export default function Login() {
             <PageNav />
             <section className="flex items-center justify-center bg-surface">
                 <div className="h-[calc(100vh-3rem)] flex items-center justify-center w-11/12 mt-12 gap-16">
-                <img className="h-4/6" src={loginImg} alt="Elderly couple admiring some famous monuments."/>
+                <div className="flex flex-col items-center justify-center">
+                    <img className="h-4/6" src={loginImg} alt="Elderly couple admiring some famous monuments."/>
+                    <p className="text-sm"><a href="https://www.freepik.com/free-vector/man-holiday-adventure-international-tourism-worldwide-sightseeing-tour-student-exchange-program_12085886.htm#query=travel&position=24&from_view=author">Image by vectorjuice</a> on Freepik</p>
+                </div>
                     <form className="w-1/3 bg-surface-container flex flex-col items-center gap-8 p-6 rounded-xl" onSubmit={handleSubmit}>
                         <div className="flex flex-col gap-2 w-full">
                             <label className="text-on-primary-container font-semibold" htmlFor="email">EMAIL</label>
