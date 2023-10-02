@@ -22,9 +22,15 @@ export default function Homepage() {
                         <p className="text-sm"><a href="https://www.freepik.com/free-vector/traveling-world-abstract-concept-illustration_11669325.htm#query=travel%20illustration&position=4&from_view=search&track=ais">Image by vectorjuice</a> on Freepik</p>
                     </div>
                     <div className="w-1/3">
-                        <h1 className="text-on-surface text-7xl mb-8 font-extrabold">Let's travel</h1>
-                        <p className="text-on-surface mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas sapien non leo scelerisque, non ullamcorper diam euismod. Vivamus nec sodales risus. Aenean ac pharetra nibh. Aenean ullamcorper velit dignissim eros rutrum, ac efficitur dui condimentum.</p>
-                        <Button label="Explore now" onClick={handleClick} color="primary" rank="main"/>
+                        <h1 className="text-on-surface text-7xl mb-4 font-extrabold">
+                            You travel the world.
+                        </h1>
+                        <h2 className="text-on-surface text-4xl mb-8 ml-2 font-extrabold">
+                            WorldWise keeps track of your adventures.
+                        </h2>
+                        <h3 className="text-on-surface text-lg mb-8 ml-2">A world map that tracks your footsteps into every city you can think of. Never forget your wonderful experiences, and show your friends how you have wandered the world.
+                        </h3>
+                        <Button className="ml-2" label="Explore now" onClick={handleClick} color="primary" rank="main"/>
                     </div>
                 </div>
             </section>
