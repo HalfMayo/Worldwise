@@ -142,4 +142,20 @@
       .progress::-webkit-progress-bar {
         @apply bg-disabled;
   }
+
+  .highlight {
+    @apply before:block before:absolute before:top-[10%] before:bottom-[2%] before:bg-gradient-to-t before:from-white before:via-white before:via-65% before:to-surface-variant before:to-65% before:-inset-1 before:-skew-x-3 relative inline-block 2xl:before:bg-transparent 2xl:before:to-white;
+  }
+
+  .highlight-less-xl {
+    @apply before:block before:absolute before:top-[3%] before:bottom-[20%] before:bg-gradient-to-t before:from-white before:via-white before:via-65% before:to-surface-variant before:to-65% before:-inset-1 before:-skew-x-3 relative inline-block 2xl:before:bg-transparent 2xl:before:to-white;
+  }
+
+  .highlight-long-lg {
+    @apply before:block before:absolute before:bg-white before:-inset-0 before:-skew-x-3 before:top-[5%] relative inline-block 2xl:before:bg-transparent;
+  }
+
+  .highlight-long-md {
+    @apply before:block before:absolute before:bg-white before:-inset-0 before:-skew-x-3 relative inline-block 2xl:before:bg-transparent;
+  }
 }
