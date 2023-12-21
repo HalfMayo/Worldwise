@@ -11,14 +11,25 @@ export default function PageNav() {
   const { isAuth } = useAuth();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  if (window.innerWidth < 768)
+  if (window.innerWidth <= 768 || window.innerHeight < 700)
     return (
       <>
         {isOpen ? (
           <div className="relative">
+            {isAuth ? (
+              <Link to="/app">
+                <User className="h-[10vh] w-full justify-between fixed z-20 bg-secondary-container px-8" />
+              </Link>
+            ) : null}
             <ul
               className={`fixed ${
-                window.innerHeight < 700 ? "h-[90vh]" : "h-screen"
+                isAuth && window.innerHeight < 700
+                  ? "h-[80vh] top-[10vh]"
+                  : !isAuth && window.innerHeight < 700
+                  ? "h-[90vh]"
+                  : isAuth && window.innerHeight >= 700
+                  ? "h-[90vh] top-[10vh]"
+                  : "h-screen"
               } w-screen bg-white z-20 flex flex-col items-center justify-center divide-y`}
             >
               <li className="font-bold h-12 w-[80vw] flex items-center justify-center">
@@ -57,12 +68,8 @@ export default function PageNav() {
                   PRICING
                 </NavLink>
               </li>
-              <li className="h-12 w-[80vw] flex items-center justify-center">
-                {isAuth ? (
-                  <Link to="/app">
-                    <User className="bg-transparent" />
-                  </Link>
-                ) : (
+              {!isAuth ? (
+                <li className="h-12 w-[80vw] flex items-center justify-center">
                   <NavLink
                     to="/login"
                     className={({ isActive }) =>
@@ -73,8 +80,8 @@ export default function PageNav() {
                   >
                     LOGIN
                   </NavLink>
-                )}
-              </li>
+                </li>
+              ) : null}
               <li className="h-12 w-[80vw] flex items-center justify-center">
                 <SvgButton
                   label="Close Menu"
