@@ -16,7 +16,11 @@ export default function PageNav() {
       <>
         {isOpen ? (
           <div className="relative">
-            <ul className="fixed h-screen w-screen bg-white z-20 flex flex-col items-center justify-center divide-y">
+            <ul
+              className={`fixed ${
+                window.innerHeight < 700 ? "h-[90vh]" : "h-screen"
+              } w-screen bg-white z-20 flex flex-col items-center justify-center divide-y`}
+            >
               <li className="font-bold h-12 w-[80vw] flex items-center justify-center">
                 <NavLink
                   to="/"
@@ -81,9 +85,14 @@ export default function PageNav() {
                 />
               </li>
             </ul>
+            {window.innerHeight < 700 && (
+              <div className="text-sm h-[10vh] text-center fixed bottom-0 z-20 w-full bg-secondary-container flex items-center justify-center">
+                All images by vectorjuice on Freepik
+              </div>
+            )}
           </div>
         ) : (
-          <div className="w-full flex items-center justify-center p-4 fixed z-20">
+          <div className="w-full flex items-center justify-center p-4 fixed z-20 bg-surface">
             <SvgButton
               label="Menu"
               svg={Menu}

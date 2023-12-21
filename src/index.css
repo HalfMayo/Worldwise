@@ -158,4 +158,34 @@
   .highlight-long-md {
     @apply before:block before:absolute before:bg-white before:-inset-0 before:-skew-x-3 relative inline-block 2xl:before:bg-transparent;
   }
+
+  .smaller-h1 {
+    @media screen and (max-height: 700px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  .smaller-h2 {
+    @media screen and (max-height: 700px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  .justification-start {
+    @media screen and (max-height: 700px) {
+      justify-content: flex-start;
+    }
+  }
+
+  .small-col {
+    @media screen and (max-height: 700px) {
+      flex-direction: column;
+    }
+  }
+
+  .from-top {
+    @media screen and (max-height: 700px) {
+      top: 4rem;
+    }
+  }
 }

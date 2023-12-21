@@ -7,5 +7,6 @@ export interface ChildrenProps {
 export interface ChildrenWProps extends ChildrenProps {
     src: string;
     alt: string;
-    link: string
+    link: string;
+    center?: boolean
 }
